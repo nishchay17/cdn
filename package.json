@@ -10,7 +10,9 @@
     "start": "node ./bin/index.js",
     "dev": "ts-node ./src/index.ts",
     "lint": "eslint src/**  --ext .js",
-    "lint-fix": "eslint --fix src/** --ext .js"
+    "lint-fix": "eslint --fix src/** --ext .js",
+    "test-watch": "vitest",
+    "test": "vitest run"
   },
   "dependencies": {
     "@types/node": "^20.6.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^3.0.3",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "vitest": "^0.34.4"
   }
 }
