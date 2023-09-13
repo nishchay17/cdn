@@ -9,8 +9,8 @@
     "build": "tsc",
     "start": "node ./bin/index.js",
     "dev": "ts-node ./src/index.ts",
-    "lint": "eslint src/**  --ext .js",
-    "lint-fix": "eslint --fix src/** --ext .js",
+    "lint": "eslint src/** --ext .js --no-error-on-unmatched-pattern",
+    "lint-fix": "eslint --fix src/** --ext .js --no-error-on-unmatched-pattern",
     "test-watch": "vitest",
     "test": "vitest run",
     "ci": "yarn lint && yarn test"
